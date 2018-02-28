@@ -1,0 +1,312 @@
+// The Round Table
+digraph {
+	"Is Thal >= 6.0?" [label="Is Thal >= 6.0?"]
+	"Is Ca >= 1.0?" [label="Is Ca >= 1.0?"]
+	"Is Thal >= 6.0?" -> "Is Ca >= 1.0?"
+	"Is Ca >= 2.0?" [label="Is Ca >= 2.0?"]
+	"Is Ca >= 1.0?" -> "Is Ca >= 2.0?"
+	"Is Trestbps >= 134.0?" [label="Is Trestbps >= 134.0?"]
+	"Is Ca >= 2.0?" -> "Is Trestbps >= 134.0?"
+	"Is Trestbps >= 150.0?" [label="Is Trestbps >= 150.0?"]
+	"Is Trestbps >= 134.0?" -> "Is Trestbps >= 150.0?"
+	"Is Chol >= 289.0?" [label="Is Chol >= 289.0?"]
+	"Is Trestbps >= 150.0?" -> "Is Chol >= 289.0?"
+	"Is Chol >= 289.0?" -> "[4.0]"
+	"Is Thal >= 7.0?" [label="Is Thal >= 7.0?"]
+	"Is Chol >= 289.0?" -> "Is Thal >= 7.0?"
+	"Is Thalach >= 133.0?" [label="Is Thalach >= 133.0?"]
+	"Is Thal >= 7.0?" -> "Is Thalach >= 133.0?"
+	"Is Thalach >= 133.0?" -> "[3.0]"
+	"Is Thalach >= 133.0?" -> "[4.0]"
+	"Is Exang >= 1.0?" [label="Is Exang >= 1.0?"]
+	"Is Thal >= 7.0?" -> "Is Exang >= 1.0?"
+	"Is Exang >= 1.0?" -> "[2.0]"
+	"Is Exang >= 1.0?" -> "[3.0]"
+	"Is Ca >= 3.0?" [label="Is Ca >= 3.0?"]
+	"Is Trestbps >= 150.0?" -> "Is Ca >= 3.0?"
+	"Is Exang >= 1.0?" [label="Is Exang >= 1.0?"]
+	"Is Ca >= 3.0?" -> "Is Exang >= 1.0?"
+	"Is Exang >= 1.0?" -> "[3.0]"
+	"Is Exang >= 1.0?" -> "[2.0]"
+	"Is Thal >= 7.0?" [label="Is Thal >= 7.0?"]
+	"Is Ca >= 3.0?" -> "Is Thal >= 7.0?"
+	"Is Thal >= 7.0?" -> "[2.0]"
+	"Is Thal >= 7.0?" -> "[4.0]"
+	"Is Agle >= 58.0?" [label="Is Agle >= 58.0?"]
+	"Is Trestbps >= 134.0?" -> "Is Agle >= 58.0?"
+	"Is Fbs >= 1.0?" [label="Is Fbs >= 1.0?"]
+	"Is Agle >= 58.0?" -> "Is Fbs >= 1.0?"
+	"Is Chol >= 254.0?" [label="Is Chol >= 254.0?"]
+	"Is Fbs >= 1.0?" -> "Is Chol >= 254.0?"
+	"Is Chol >= 254.0?" -> "[3.0]"
+	"Is Chol >= 254.0?" -> "[2.0]"
+	"Is Oldpeak >= 3.0?" [label="Is Oldpeak >= 3.0?"]
+	"Is Fbs >= 1.0?" -> "Is Oldpeak >= 3.0?"
+	"Is Thal >= 7.0?" [label="Is Thal >= 7.0?"]
+	"Is Oldpeak >= 3.0?" -> "Is Thal >= 7.0?"
+	"Is Thal >= 7.0?" -> "[3.0]"
+	"Is Thal >= 7.0?" -> "[4.0]"
+	"Is Trestbps >= 130.0?" [label="Is Trestbps >= 130.0?"]
+	"Is Oldpeak >= 3.0?" -> "Is Trestbps >= 130.0?"
+	"Is Ca >= 3.0?" [label="Is Ca >= 3.0?"]
+	"Is Trestbps >= 130.0?" -> "Is Ca >= 3.0?"
+	"Is Ca >= 3.0?" -> "[0.0]"
+	"Is Ca >= 3.0?" -> "[4.0]"
+	"Is Trestbps >= 130.0?" -> "[1.0]"
+	"Is Trestbps >= 120.0?" [label="Is Trestbps >= 120.0?"]
+	"Is Agle >= 58.0?" -> "Is Trestbps >= 120.0?"
+	"Is Trestbps >= 120.0?" -> "[3.0]"
+	"Is Trestbps >= 120.0?" -> "[0.0]"
+	"Is Trestbps >= 124.0?" [label="Is Trestbps >= 124.0?"]
+	"Is Ca >= 2.0?" -> "Is Trestbps >= 124.0?"
+	"Is Agle >= 59.0?" [label="Is Agle >= 59.0?"]
+	"Is Trestbps >= 124.0?" -> "Is Agle >= 59.0?"
+	"Is Exang >= 1.0?" [label="Is Exang >= 1.0?"]
+	"Is Agle >= 59.0?" -> "Is Exang >= 1.0?"
+	"Is Chol >= 263.0?" [label="Is Chol >= 263.0?"]
+	"Is Exang >= 1.0?" -> "Is Chol >= 263.0?"
+	"Is Oldpeak >= 2.9?" [label="Is Oldpeak >= 2.9?"]
+	"Is Chol >= 263.0?" -> "Is Oldpeak >= 2.9?"
+	"Is Oldpeak >= 2.9?" -> "[3.0]"
+	"Is Oldpeak >= 2.9?" -> "[0.0]"
+	"Is Oldpeak >= 1.4?" [label="Is Oldpeak >= 1.4?"]
+	"Is Chol >= 263.0?" -> "Is Oldpeak >= 1.4?"
+	"Is Oldpeak >= 1.4?" -> "[1.0]"
+	"Is Oldpeak >= 1.4?" -> "[2.0]"
+	"Is Exang >= 1.0?" -> "[2.0]"
+	"Is Fbs >= 1.0?" [label="Is Fbs >= 1.0?"]
+	"Is Agle >= 59.0?" -> "Is Fbs >= 1.0?"
+	"Is Thal >= 7.0?" [label="Is Thal >= 7.0?"]
+	"Is Fbs >= 1.0?" -> "Is Thal >= 7.0?"
+	"Is Thal >= 7.0?" -> "[0.0]"
+	"Is Thal >= 7.0?" -> "[2.0]"
+	"Is Chol >= 289.0?" [label="Is Chol >= 289.0?"]
+	"Is Fbs >= 1.0?" -> "Is Chol >= 289.0?"
+	"Is Oldpeak >= 1.2?" [label="Is Oldpeak >= 1.2?"]
+	"Is Chol >= 289.0?" -> "Is Oldpeak >= 1.2?"
+	"Is Oldpeak >= 1.2?" -> "[3.0]"
+	"Is Oldpeak >= 1.2?" -> "[4.0]"
+	"Is Chol >= 218.0?" [label="Is Chol >= 218.0?"]
+	"Is Chol >= 289.0?" -> "Is Chol >= 218.0?"
+	"Is Chol >= 218.0?" -> "[1.0]"
+	"Is Thal >= 7.0?" [label="Is Thal >= 7.0?"]
+	"Is Chol >= 218.0?" -> "Is Thal >= 7.0?"
+	"Is Thal >= 7.0?" -> "[3.0]"
+	"Is Thal >= 7.0?" -> "[1.0]"
+	"Is Cp >= 4.0?" [label="Is Cp >= 4.0?"]
+	"Is Trestbps >= 124.0?" -> "Is Cp >= 4.0?"
+	"Is Thalach >= 140.0?" [label="Is Thalach >= 140.0?"]
+	"Is Cp >= 4.0?" -> "Is Thalach >= 140.0?"
+	"Is Thalach >= 140.0?" -> "[2.0]"
+	"Is Oldpeak >= 2.8?" [label="Is Oldpeak >= 2.8?"]
+	"Is Thalach >= 140.0?" -> "Is Oldpeak >= 2.8?"
+	"Is Oldpeak >= 2.8?" -> "[3.0]"
+	"Is Oldpeak >= 2.8?" -> "[2.0]"
+	"Is Slope >= 2.0?" [label="Is Slope >= 2.0?"]
+	"Is Cp >= 4.0?" -> "Is Slope >= 2.0?"
+	"Is Oldpeak >= 2.5?" [label="Is Oldpeak >= 2.5?"]
+	"Is Slope >= 2.0?" -> "Is Oldpeak >= 2.5?"
+	"Is Oldpeak >= 2.5?" -> "[4.0]"
+	"Is Oldpeak >= 2.5?" -> "[3.0]"
+	"Is Slope >= 2.0?" -> "[0.0]"
+	"Is Exang >= 1.0?" [label="Is Exang >= 1.0?"]
+	"Is Ca >= 1.0?" -> "Is Exang >= 1.0?"
+	"Is Chol >= 282.0?" [label="Is Chol >= 282.0?"]
+	"Is Exang >= 1.0?" -> "Is Chol >= 282.0?"
+	"Is Thalach >= 146.0?" [label="Is Thalach >= 146.0?"]
+	"Is Chol >= 282.0?" -> "Is Thalach >= 146.0?"
+	"Is Thalach >= 146.0?" -> "[1.0]"
+	"Is Trestbps >= 130.0?" [label="Is Trestbps >= 130.0?"]
+	"Is Thalach >= 146.0?" -> "Is Trestbps >= 130.0?"
+	"Is Trestbps >= 130.0?" -> "[2.0]"
+	"Is Trestbps >= 130.0?" -> "[1.0]"
+	"Is Thalach >= 123.0?" [label="Is Thalach >= 123.0?"]
+	"Is Chol >= 282.0?" -> "Is Thalach >= 123.0?"
+	"Is Trestbps >= 144.0?" [label="Is Trestbps >= 144.0?"]
+	"Is Thalach >= 123.0?" -> "Is Trestbps >= 144.0?"
+	"Is Slope >= 3.0?" [label="Is Slope >= 3.0?"]
+	"Is Trestbps >= 144.0?" -> "Is Slope >= 3.0?"
+	"Is Slope >= 3.0?" -> "[4.0]"
+	"Is Slope >= 3.0?" -> "[3.0]"
+	"Is Oldpeak >= 1.6?" [label="Is Oldpeak >= 1.6?"]
+	"Is Trestbps >= 144.0?" -> "Is Oldpeak >= 1.6?"
+	"Is Thal >= 7.0?" [label="Is Thal >= 7.0?"]
+	"Is Oldpeak >= 1.6?" -> "Is Thal >= 7.0?"
+	"Is Oldpeak >= 3.8?" [label="Is Oldpeak >= 3.8?"]
+	"Is Thal >= 7.0?" -> "Is Oldpeak >= 3.8?"
+	"Is Oldpeak >= 3.8?" -> "[4.0]"
+	"Is Oldpeak >= 3.8?" -> "[1.0]"
+	"Is Thal >= 7.0?" -> "[2.0]"
+	"Is Chol >= 241.0?" [label="Is Chol >= 241.0?"]
+	"Is Oldpeak >= 1.6?" -> "Is Chol >= 241.0?"
+	"Is Chol >= 241.0?" -> "[1.0]"
+	"Is Chol >= 241.0?" -> "[0.0]"
+	"Is Oldpeak >= 0.8?" [label="Is Oldpeak >= 0.8?"]
+	"Is Thalach >= 123.0?" -> "Is Oldpeak >= 0.8?"
+	"Is Oldpeak >= 0.8?" -> "[3.0]"
+	"Is Oldpeak >= 0.8?" -> "[0.0]"
+	"Is Agle >= 52.0?" [label="Is Agle >= 52.0?"]
+	"Is Exang >= 1.0?" -> "Is Agle >= 52.0?"
+	"Is Oldpeak >= 0.4?" [label="Is Oldpeak >= 0.4?"]
+	"Is Agle >= 52.0?" -> "Is Oldpeak >= 0.4?"
+	"Is Agle >= 67.0?" [label="Is Agle >= 67.0?"]
+	"Is Oldpeak >= 0.4?" -> "Is Agle >= 67.0?"
+	"Is Oldpeak >= 1.6?" [label="Is Oldpeak >= 1.6?"]
+	"Is Agle >= 67.0?" -> "Is Oldpeak >= 1.6?"
+	"Is Oldpeak >= 1.6?" -> "[0.0]"
+	"Is Oldpeak >= 1.6?" -> "[1.0]"
+	"Is Agle >= 67.0?" -> "[0.0]"
+	"Is Oldpeak >= 0.2?" [label="Is Oldpeak >= 0.2?"]
+	"Is Oldpeak >= 0.4?" -> "Is Oldpeak >= 0.2?"
+	"Is Thalach >= 141.0?" [label="Is Thalach >= 141.0?"]
+	"Is Oldpeak >= 0.2?" -> "Is Thalach >= 141.0?"
+	"Is Thalach >= 141.0?" -> "[1.0]"
+	"Is Thalach >= 141.0?" -> "[0.0]"
+	"Is Oldpeak >= 0.2?" -> "[0.0]"
+	"Is Fbs >= 1.0?" [label="Is Fbs >= 1.0?"]
+	"Is Agle >= 52.0?" -> "Is Fbs >= 1.0?"
+	"Is Fbs >= 1.0?" -> "[0.0]"
+	"Is Oldpeak >= 0.5?" [label="Is Oldpeak >= 0.5?"]
+	"Is Fbs >= 1.0?" -> "Is Oldpeak >= 0.5?"
+	"Is Oldpeak >= 2.6?" [label="Is Oldpeak >= 2.6?"]
+	"Is Oldpeak >= 0.5?" -> "Is Oldpeak >= 2.6?"
+	"Is Oldpeak >= 2.6?" -> "[4.0]"
+	"Is Trestbps >= 118.0?" [label="Is Trestbps >= 118.0?"]
+	"Is Oldpeak >= 2.6?" -> "Is Trestbps >= 118.0?"
+	"Is Slope >= 2.0?" [label="Is Slope >= 2.0?"]
+	"Is Trestbps >= 118.0?" -> "Is Slope >= 2.0?"
+	"Is Slope >= 2.0?" -> "[3.0]"
+	"Is Slope >= 2.0?" -> "[1.0]"
+	"Is Trestbps >= 118.0?" -> "[1.0]"
+	"Is Cp >= 4.0?" [label="Is Cp >= 4.0?"]
+	"Is Oldpeak >= 0.5?" -> "Is Cp >= 4.0?"
+	"Is Agle >= 43.0?" [label="Is Agle >= 43.0?"]
+	"Is Cp >= 4.0?" -> "Is Agle >= 43.0?"
+	"Is Agle >= 43.0?" -> "[0.0]"
+	"Is Agle >= 43.0?" -> "[1.0]"
+	"Is Cp >= 4.0?" -> "[0.0]"
+	"Is Ca >= 1.0?" [label="Is Ca >= 1.0?"]
+	"Is Thal >= 6.0?" -> "Is Ca >= 1.0?"
+	"Is Cp >= 4.0?" [label="Is Cp >= 4.0?"]
+	"Is Ca >= 1.0?" -> "Is Cp >= 4.0?"
+	"Is Slope >= 3.0?" [label="Is Slope >= 3.0?"]
+	"Is Cp >= 4.0?" -> "Is Slope >= 3.0?"
+	"Is Slope >= 3.0?" -> "[3.0]"
+	"Is Sex >= 1.0?" [label="Is Sex >= 1.0?"]
+	"Is Slope >= 3.0?" -> "Is Sex >= 1.0?"
+	"Is Exang >= 1.0?" [label="Is Exang >= 1.0?"]
+	"Is Sex >= 1.0?" -> "Is Exang >= 1.0?"
+	"Is Agle >= 61.0?" [label="Is Agle >= 61.0?"]
+	"Is Exang >= 1.0?" -> "Is Agle >= 61.0?"
+	"Is Trestbps >= 112.0?" [label="Is Trestbps >= 112.0?"]
+	"Is Agle >= 61.0?" -> "Is Trestbps >= 112.0?"
+	"Is Thalach >= 125.0?" [label="Is Thalach >= 125.0?"]
+	"Is Trestbps >= 112.0?" -> "Is Thalach >= 125.0?"
+	"Is Trestbps >= 125.0?" [label="Is Trestbps >= 125.0?"]
+	"Is Thalach >= 125.0?" -> "Is Trestbps >= 125.0?"
+	"Is Trestbps >= 125.0?" -> "[4.0]"
+	"Is Trestbps >= 125.0?" -> "[2.0]"
+	"Is Thalach >= 125.0?" -> "[2.0]"
+	"Is Trestbps >= 112.0?" -> "[3.0]"
+	"Is Thalach >= 118.0?" [label="Is Thalach >= 118.0?"]
+	"Is Agle >= 61.0?" -> "Is Thalach >= 118.0?"
+	"Is Thalach >= 118.0?" -> "[1.0]"
+	"Is Thalach >= 118.0?" -> "[3.0]"
+	"Is Thalach >= 160.0?" [label="Is Thalach >= 160.0?"]
+	"Is Exang >= 1.0?" -> "Is Thalach >= 160.0?"
+	"Is Thalach >= 160.0?" -> "[1.0]"
+	"Is Ca >= 3.0?" [label="Is Ca >= 3.0?"]
+	"Is Thalach >= 160.0?" -> "Is Ca >= 3.0?"
+	"Is Ca >= 3.0?" -> "[1.0]"
+	"Is Ca >= 3.0?" -> "[2.0]"
+	"Is Ca >= 3.0?" [label="Is Ca >= 3.0?"]
+	"Is Sex >= 1.0?" -> "Is Ca >= 3.0?"
+	"Is Ca >= 3.0?" -> "[2.0]"
+	"Is Exang >= 1.0?" [label="Is Exang >= 1.0?"]
+	"Is Ca >= 3.0?" -> "Is Exang >= 1.0?"
+	"Is Exang >= 1.0?" -> "[1.0]"
+	"Is Exang >= 1.0?" -> "[0.0]"
+	"Is Oldpeak >= 2.6?" [label="Is Oldpeak >= 2.6?"]
+	"Is Cp >= 4.0?" -> "Is Oldpeak >= 2.6?"
+	"Is Oldpeak >= 2.6?" -> "[2.0]"
+	"Is Chol >= 195.0?" [label="Is Chol >= 195.0?"]
+	"Is Oldpeak >= 2.6?" -> "Is Chol >= 195.0?"
+	"Is Cp >= 3.0?" [label="Is Cp >= 3.0?"]
+	"Is Chol >= 195.0?" -> "Is Cp >= 3.0?"
+	"Is Cp >= 3.0?" -> "[0.0]"
+	"Is Thalach >= 162.0?" [label="Is Thalach >= 162.0?"]
+	"Is Cp >= 3.0?" -> "Is Thalach >= 162.0?"
+	"Is Thalach >= 178.0?" [label="Is Thalach >= 178.0?"]
+	"Is Thalach >= 162.0?" -> "Is Thalach >= 178.0?"
+	"Is Thalach >= 178.0?" -> "[0.0]"
+	"Is Restecg >= 2.0?" [label="Is Restecg >= 2.0?"]
+	"Is Thalach >= 178.0?" -> "Is Restecg >= 2.0?"
+	"Is Restecg >= 2.0?" -> "[1.0]"
+	"Is Oldpeak >= 0.8?" [label="Is Oldpeak >= 0.8?"]
+	"Is Restecg >= 2.0?" -> "Is Oldpeak >= 0.8?"
+	"Is Oldpeak >= 0.8?" -> "[1.0]"
+	"Is Oldpeak >= 0.8?" -> "[0.0]"
+	"Is Chol >= 319.0?" [label="Is Chol >= 319.0?"]
+	"Is Thalach >= 162.0?" -> "Is Chol >= 319.0?"
+	"Is Chol >= 319.0?" -> "[3.0]"
+	"Is Chol >= 319.0?" -> "[0.0]"
+	"Is Chol >= 195.0?" -> "[1.0]"
+	"Is Trestbps >= 158.0?" [label="Is Trestbps >= 158.0?"]
+	"Is Ca >= 1.0?" -> "Is Trestbps >= 158.0?"
+	"Is Chol >= 325.0?" [label="Is Chol >= 325.0?"]
+	"Is Trestbps >= 158.0?" -> "Is Chol >= 325.0?"
+	"Is Slope >= 2.0?" [label="Is Slope >= 2.0?"]
+	"Is Chol >= 325.0?" -> "Is Slope >= 2.0?"
+	"Is Slope >= 2.0?" -> "[2.0]"
+	"Is Slope >= 2.0?" -> "[0.0]"
+	"Is Chol >= 325.0?" -> "[1.0]"
+	"Is Thalach >= 96.0?" [label="Is Thalach >= 96.0?"]
+	"Is Trestbps >= 158.0?" -> "Is Thalach >= 96.0?"
+	"Is Oldpeak >= 3.6?" [label="Is Oldpeak >= 3.6?"]
+	"Is Thalach >= 96.0?" -> "Is Oldpeak >= 3.6?"
+	"Is Oldpeak >= 3.6?" -> "[1.0]"
+	"Is Agle >= 60.0?" [label="Is Agle >= 60.0?"]
+	"Is Oldpeak >= 3.6?" -> "Is Agle >= 60.0?"
+	"Is Thalach >= 154.0?" [label="Is Thalach >= 154.0?"]
+	"Is Agle >= 60.0?" -> "Is Thalach >= 154.0?"
+	"Is Thalach >= 171.0?" [label="Is Thalach >= 171.0?"]
+	"Is Thalach >= 154.0?" -> "Is Thalach >= 171.0?"
+	"Is Thalach >= 171.0?" -> "[0.0]"
+	"Is Chol >= 394.0?" [label="Is Chol >= 394.0?"]
+	"Is Thalach >= 171.0?" -> "Is Chol >= 394.0?"
+	"Is Chol >= 394.0?" -> "[0.0]"
+	"Is Trestbps >= 130.0?" [label="Is Trestbps >= 130.0?"]
+	"Is Chol >= 394.0?" -> "Is Trestbps >= 130.0?"
+	"Is Trestbps >= 130.0?" -> "[1.0]"
+	"Is Trestbps >= 130.0?" -> "[0.0]"
+	"Is Exang >= 1.0?" [label="Is Exang >= 1.0?"]
+	"Is Thalach >= 154.0?" -> "Is Exang >= 1.0?"
+	"Is Oldpeak >= 1.0?" [label="Is Oldpeak >= 1.0?"]
+	"Is Exang >= 1.0?" -> "Is Oldpeak >= 1.0?"
+	"Is Oldpeak >= 1.0?" -> "[0.0]"
+	"Is Oldpeak >= 1.0?" -> "[1.0]"
+	"Is Exang >= 1.0?" -> "[0.0]"
+	"Is Thal == ??" [label="Is Thal == ??"]
+	"Is Agle >= 60.0?" -> "Is Thal == ??"
+	"Is Slope >= 2.0?" [label="Is Slope >= 2.0?"]
+	"Is Thal == ??" -> "Is Slope >= 2.0?"
+	"Is Slope >= 2.0?" -> "[2.0]"
+	"Is Slope >= 2.0?" -> "[0.0]"
+	"Is Oldpeak >= 1.8?" [label="Is Oldpeak >= 1.8?"]
+	"Is Thal == ??" -> "Is Oldpeak >= 1.8?"
+	"Is Oldpeak >= 2.0?" [label="Is Oldpeak >= 2.0?"]
+	"Is Oldpeak >= 1.8?" -> "Is Oldpeak >= 2.0?"
+	"Is Oldpeak >= 2.0?" -> "[0.0]"
+	"Is Oldpeak >= 2.0?" -> "[1.0]"
+	"Is Trestbps >= 110.0?" [label="Is Trestbps >= 110.0?"]
+	"Is Oldpeak >= 1.8?" -> "Is Trestbps >= 110.0?"
+	"Is Trestbps >= 110.0?" -> "[0.0]"
+	"Is Sex >= 1.0?" [label="Is Sex >= 1.0?"]
+	"Is Trestbps >= 110.0?" -> "Is Sex >= 1.0?"
+	"Is Slope >= 2.0?" [label="Is Slope >= 2.0?"]
+	"Is Sex >= 1.0?" -> "Is Slope >= 2.0?"
+	"Is Slope >= 2.0?" -> "[0.0]"
+	"Is Slope >= 2.0?" -> "[1.0]"
+	"Is Sex >= 1.0?" -> "[0.0]"
+	"Is Thalach >= 96.0?" -> "[2.0]"
+}

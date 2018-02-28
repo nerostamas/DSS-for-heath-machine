@@ -5,6 +5,7 @@ We'll write a Decision Tree Classifier, in pure Python.
 
 # For Python 2 / 3 compatability
 from __future__ import print_function
+from graphviz import Digraph
 
 #function to convert raw data to array
 def getData(filePath):
@@ -21,15 +22,15 @@ def getData(filePath):
             except:
                 temparr.append(i)
         arr.append(temparr)
-        print ("%s - %s" %(len(arr[-1]),arr[-1]))
-    print ("finish build data")
+        #print ("%s - %s" %(len(arr[-1]),arr[-1]))
+    #print ("finish build data")
     return arr
 
 def defineHeader():
     header = ["Agle", "Sex", "Cp","Trestbps","Chol","Fbs","Restecg","Thalach","Exang","Oldpeak","Slope",
               "Ca","Thal","Num"]
-    print ("%s - %s" %(len(header),header))
-    print ("Finish header")
+    #print ("%s - %s" %(len(header),header))
+    #print ("Finish header")
     return header
 
 # Toy dataset.
@@ -329,7 +330,7 @@ def build_tree(rows):
     # calculate the information gain,
     # and return the question that produces the highest gain.
     gain, question = find_best_split(rows)
-    print ("Question: %s" %question)
+    #print ("Question: %s" %question)
 
     # Base case: no further info gain
     # Since we can ask no further questions,
@@ -354,24 +355,34 @@ def build_tree(rows):
     return Decision_Node(question, true_branch, false_branch)
 
 
-def print_tree(node, spacing=""):
+def print_tree(node, parent = None, spacing=""):
     """World's most elegant tree printing function."""
 
     # Base case: we've reached a leaf
     if isinstance(node, Leaf):
+        dot.edge(parent, str(node.predictions.keys()))
         print (spacing + "Predict", node.predictions)
         return
 
     # Print the question at this node
     print (spacing + str(node.question))
 
+    global dot
+    global dotNum
+    subID = dotNum
+    dot.node(str(node.question), str(node.question))
+    if parent is not None:
+        dot.edge(parent, str(node.question))
+
     # Call this function recursively on the true branch
     print (spacing + '--> True:')
-    print_tree(node.true_branch, spacing + "  ")
+    print_tree(node.true_branch,str(node.question),spacing + "  ")
+
 
     # Call this function recursively on the false branch
     print (spacing + '--> False:')
-    print_tree(node.false_branch, spacing + "  ")
+    print_tree(node.false_branch, str(node.question), spacing + "  ")
+    dotNum += 1
 
 
 def classify(row, node):
@@ -419,11 +430,20 @@ def print_leaf(counts):
 # print_leaf(classify(training_data[1], my_tree))
 #######
 
+#graph
+global dot
+global dotNum
+dotNum = 0
+dot = Digraph(comment='The Round Table')
+
 if __name__ == '__main__':
 
     my_tree = build_tree(training_data)
     print("================ RULE FROM DATA ===================")
     print_tree(my_tree)
+
+    #render Graph
+    dot.render('round-table.gv', view=True)
 
     # Evaluate
     testing_data = [
